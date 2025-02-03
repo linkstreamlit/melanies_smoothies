@@ -61,4 +61,4 @@ my_insert_stmt = """
 time_to_insert = st.button('Submit Order')
 if time_to_insert:
     session.cursor().execute(my_insert_stmt, (ingredients_string.strip(), name_on_order.strip()))
-    st.success('Your Smoothie is Ordered!', icon=
+    st.success('Your Smoothie is Ordered!', icon="✅")
